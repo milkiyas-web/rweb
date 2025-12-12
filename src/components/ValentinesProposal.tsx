@@ -130,9 +130,9 @@ export default function ValentinesProposal() {
             </div>
 
             <h2
-              className={`text-5xl font-semibold mb-8 ${playfairDisplay.className}`}
+              className={`text-5xl text-center font-semibold font-sans mb-8 ${playfairDisplay.className}`}
             >
-              Will you be my Valentine?
+              "forever isn't forever so just be my baby until <br /> whenever and if shit goes sideways just  be my <br /> friend until we get back together"
             </h2>
             <Image
               src="/sad_hamster.png"
@@ -145,17 +145,17 @@ export default function ValentinesProposal() {
                 className="px-6 py-2 text-lg font-semibold text-white bg-gradient-to-r from-pink-500 to-rose-500 rounded-xl hover:from-pink-600 hover:to-rose-600 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
                 onClick={handleYesClick}
               >
-                Yes, I will! 🥰
+                Yes, I will be your forever! 🥰
               </button>
               <button
                 className="px-6 py-2 text-lg font-semibold text-white bg-gradient-to-r from-gray-500 to-gray-600 rounded-xl hover:from-gray-600 hover:to-gray-700 transform hover:scale-95 transition-all duration-300 shadow-lg"
                 style={
                   position
                     ? {
-                        position: "absolute",
-                        top: position.top,
-                        left: position.left,
-                      }
+                      position: "absolute",
+                      top: position.top,
+                      left: position.left,
+                    }
                     : {}
                 }
                 onMouseEnter={() => setPosition(getRandomPosition())}
@@ -175,7 +175,7 @@ export default function ValentinesProposal() {
             exit={{ opacity: 0 }}
           >
             Thank you for accepting, I love you! 💕
-            <p className="text-sm mt-4">For more information, write me!!! 💌</p>
+            {/* <p className="text-sm mt-4">For more information, write me!!! 💌</p> */}
             <Image
               src="/hamster_jumping.gif"
               alt="Hamster Feliz"
