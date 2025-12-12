@@ -1,8 +1,9 @@
+"use client"
 import { useState, useEffect } from "react";
 import { Playfair_Display } from "next/font/google";
 import { motion, AnimatePresence } from "framer-motion";
 import Fireworks from "@fireworks-js/react";
-import Image from "next/image";
+import Image from "next/image"
 
 const playfairDisplay = Playfair_Display({
   display: "swap",
@@ -132,7 +133,7 @@ export default function ValentinesProposal() {
             <h2
               className={`text-5xl text-center font-semibold font-sans mb-8 ${playfairDisplay.className}`}
             >
-              "forever isn't forever so just be my baby until <br /> whenever and if shit goes sideways just  be my <br /> friend until we get back together"
+              &quot;forever isn&apos;t forever so just be my baby until <br /> whenever and if shit goes sideways just  be my <br /> friend until we get back together&quot;
             </h2>
             <Image
               src="/sad_hamster.png"
